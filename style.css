@@ -166,14 +166,13 @@
     background-size: cover;
 }
 .title {
-    padding-top: 5%;
+    padding-top: 4%;
     width: 40%;
     margin-left: 7%;
     line-height: 2.3em;
-    color:#2b49ff;
 }
 .title p {
-    color:#2b49ff;
+    color:#2e3230;
     font-weight: 900;
 
 }

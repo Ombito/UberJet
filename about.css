@@ -199,15 +199,51 @@
     width: 30%;
     height: 30vh;
     padding: 0 2%;
+    background-color: rgb(243, 242, 237);
     box-shadow: #2b49ff;
     border-radius: 4%;
     border: 1px solid black;
+    cursor: pointer;
 }
 .cards i {
     font-size: 30px;
     padding-left: 20%;
     padding-top: 7%;
     padding-bottom: 7%;
+}
+.our-fleet {
+    margin-left: 7%;
+    margin-top: 3%;
+}
+.our-fleet h3 {
+    padding-bottom: 2%;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    cursor: pointer;
+}
+.images img {
+    width: 30%;
+    height: 35vh;
+    border-radius: 2%;
+}
+.contact {
+    margin-left: 18%;
+    margin-top: 4%; 
+}
+.contact h3 {
+    padding-bottom: 1%;
+}
+.contact button {
+    margin-top: 3%;
+    height: 4vh;
+    width: 15%;
+    margin-bottom: 3%;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: green;
 }
 /* style for mobile devices */
   @media only screen and (max-width: 700px) {
