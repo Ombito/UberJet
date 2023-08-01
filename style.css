@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: white;
+    color: rgb(0, 0, 0);
 }
  body{
-    background-color: #000000;
+    background-color: #fcfcfc;
 }
 
 /* style the navigation bar */
@@ -162,7 +162,7 @@
 #banner {
     background-image: url("./images/banner.jpg");
     width: 100%;
-    height: 40vh;
+    height: 45vh;
     background-size: cover;
 }
 .title {
@@ -188,13 +188,34 @@
     flex-direction: row;
     margin-left: 16%;
     padding-bottom: 30px;
+    
 }
 .chopper-cards img {
     height: 35vh;
     width: 40%;
+    border-radius: 3%;
 }
 .chopper-cards p{
     width: 40%;
+    padding: 2%;
+}
+.know-us {
+    display: flex;
+    flex-direction: row;
+    margin-left: 16%;
+}
+.know-us p {
+    width: 40%;
+    padding-right: 5%;
+}
+#booking {
+    margin-left: 9%;
+    margin-top: 4%;
+}
+#download-app button{
+    height: 5vh;
+    background-color: green;
+    margin-bottom: 3%;
 }
 /* style for mobile devices */
   @media only screen and (max-width: 700px) {
