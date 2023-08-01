@@ -182,6 +182,7 @@
     width: 30%;
     font-size: 1.1em;
     background-color: green;
+    cursor: pointer;
 }
 .chopper-cards {
     display: flex;
@@ -216,6 +217,7 @@
     height: 5vh;
     background-color: green;
     margin-bottom: 3%;
+    cursor: pointer
 }
 /* style for mobile devices */
   @media only screen and (max-width: 700px) {
