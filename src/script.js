@@ -1,4 +1,4 @@
-const form = document.getElementById('form');
+const form = document.getElementById('form')[0];
 const mycards = document.getElementsByClassName("booking-cards");
 
 //add event listener to form

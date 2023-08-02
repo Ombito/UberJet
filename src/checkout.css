@@ -5,11 +5,47 @@ form {
     margin: auto;
     background-color: grey;
     width: 50%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
 form input {
     height: 6vh;
     width: 80%;
+}
+form select {
+    height: 6vh;
+    width: 80%;
+}
+.telNumber {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.telNumber label div{
+    display: flex;
+    flex-direction: column;
+}
+#national-id {
+    width: 96%;
+}
+.form-time {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    gap: 220px;
+    justify-content: space-between;
+}
+#date {
+    width: 160%;
+}
+.form-time div {
+    display: flex;
+    flex-direction: column;
+}
+
+#button {
+    background-color: green;
 }

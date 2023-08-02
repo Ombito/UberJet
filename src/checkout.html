@@ -12,42 +12,53 @@
         <h3>Book Now</h3>
         <label for="name">Full Name</label>
         <input id="name" type="text" name="name" placeholder="Enter your full name" required/>
-        <label for="number">Mobile Number</label>
-        <input id="mobile" name="number" type="tel" required/>
-        <label for="number">National ID no.</label>
-        <input id="national-id" type="number" for="number" placeholder="Your national ID no." required/>
-        <input id="date" type="date" for="date" placeholder="Choose Date" required/>
-        <label for="time">Choose time</label>
-        <input id="time" type="time" for="time" placeholder="Choose Time" required/>
+        <div class="telNumber">
+            <div>
+                <label for="number">Mobile Number</label>
+                <input id="mobile" name="number" type="tel" placeholder="Mobile number" required/>
+            </div>
+            <div>
+                <label for="number">National ID no.</label>
+                <input id="national-id" type="tel" for="number" placeholder="Your national ID no." required/>
+            </div>
+        </div>
+        <div class="form-time">
+            <div >
+                <label class="datelabel" for="time">Choose date</label>
+                <input id="date" type="date" for="date" placeholder="Choose Date" required/>
+            </div>
+            <div>
+                <label for="time">Choose time</label>
+                <input id="time" type="time" for="time" placeholder="Choose Time" required/>
+            </div>
+        </div>
         <label for="section">Departure</label>
-        <input name="section" list="scripts" autofocus />
-        <datalist id="scripts">
-            <option value="Wilson Airport">
-            <option value="JKIA">
-            <option value="Mombasa">
-            <option value="Kisumu">
-            <option value="Naivasha">
-            <option value="Naivasha"></option>
-            <option value="Eldoret">
-            <option value="Nakuru">
-            <option value="Voi">
-            <option value="Namanga">
-        </datalist>
-        <label for="section">Specify a Destination</label>
-        <input name="section" list="drop" autofocus />
-        <datalist id="drop">
-            <option value="Wilson Airport">
-            <option value="JKIA">
-            <option value="Mombasa">
-            <option value="Kisumu">
-            <option value="Naivasha">
-            <option value="Naivasha"></option>
-            <option value="Eldoret">
-            <option value="Nakuru">
-            <option value="Voi">
-            <option value="Namanga">
-        </datalist>
-        <input type="submit" value="BOOK">
+        <select name="places" id="scripts" required>
+            <option value="">Choose location</option>
+            <option value="JKIA">JKIA</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Naivasha">Naivasha</option>
+            <option value="Nanyuki">Nanyuki</option>
+            <option value="Eldoret">Eldoret</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Voi">Voi</option>
+            <option value="Namanga">Namanga</option>
+        </select>
+        <label for="section">Destination</label>
+        <select name="places" id="scripts"required>
+            <option value="">Choose location</option>
+            <option value="JKIA">JKIA</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Naivasha">Naivasha</option>
+            <option value="Nanyuki">Nanyuki</option>
+            <option value="Eldoret">Eldoret</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Voi">Voi</option>
+            <option value="Namanga">Namanga</option>
+        </select>
+        <input id="button" type="submit" value="BOOK">
     </form>
 </body>
 </html>
