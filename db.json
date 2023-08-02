@@ -1,19 +1,64 @@
 {
-  "posts": [
+  "tickets": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
+      "name": "Alvin Fred Ombito",
+      "mobile": "0712345678",
+      "nationalid": "1909043",
+      "date": "04-01-2023",
+      "time": "10:00",
+      "departure": "Kisumu",
+      "destination": "Nairobi"
+  },
+      {
+          "name": "Bridgit Wangari",
+          "mobile": "0787654321",
+          "nationalid": "37892043",
+          "date": "04-01-2023",
+          "time": "10:00",
+          "departure": "Kisumu",
+          "destination": "Nairobi"
+      }
   ],
-  "comments": [
+  "helicopter": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "image": "./images/img8.jpg",
+      "type": "Maximum 4 people",
+      "cost": "$1800"
+    },
+    {
+      "image": "./images/img7.jpg",
+      "type": "Maximum 4 people",
+      "cost": "$1900"
+    },
+    {
+      "image": "./images/img6.jpg",
+      "type": "Maximum 4 people",
+      "cost": "$1900"
+    },
+    {
+      "image": "./images/img5.jpg",
+      "type": "Maximum 4 people",
+      "cost": "$1800"
+    },
+    {
+      "image": "./images/img3.jpg",
+      "type": "Maximum 4 people",
+      "cost": "$1500"
+    },
+    {
+      "image": "./images/img2.jpg",
+      "type": "Maximum 4 people",
+      "cost": "$180"
+    },
+    {
+      "image": "./images/view4.jpg",
+      "type": "Maximum 4 people",
+      "cost": "$180"
+    },
+    {
+      "image": "./images/img1.jpg",
+      "type": "Maximum 4 people",
+      "cost": "$180"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

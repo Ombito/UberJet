@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./checkout.css">
-    <link defer src="./script.js" />
+    <script defer src="./script.js"></script> 
     <title>Check Out</title>
 </head>
 <body>
     <form id="form">
         <h3>Book Now</h3>
         <label for="name">Full Name</label>
-        <input type="text" name="name" placeholder="Enter your full name" required/>
+        <input id="name" type="text" name="name" placeholder="Enter your full name" required/>
         <label for="number">Mobile Number</label>
-        <input name="number" type="tel" required/>
+        <input id="mobile" name="number" type="tel" required/>
         <label for="number">National ID no.</label>
-        <input type="number" for="number" placeholder="Your national ID no." required/>
-        <input type="date" for="date" placeholder="Choose Date" required/>
+        <input id="national-id" type="number" for="number" placeholder="Your national ID no." required/>
+        <input id="date" type="date" for="date" placeholder="Choose Date" required/>
         <label for="time">Choose time</label>
-        <input type="time" for="time" placeholder="Choose Time" required/>
+        <input id="time" type="time" for="time" placeholder="Choose Time" required/>
         <label for="section">Departure</label>
         <input name="section" list="scripts" autofocus />
         <datalist id="scripts">
