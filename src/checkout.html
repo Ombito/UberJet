@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./checkout.css">
+    <title>Check Out</title>
+</head>
+<body>
+    <form>
+        <h3>Book Now</h3>
+        <label for="name">Full Name</label>
+        <input type="text" name="name" placeholder="Enter your full name" required/>
+        <label for="number">Mobile Number</label>
+        <input name="number" type="tel" required/>
+        <label for="number">National ID no.</label>
+        <input type="number" for="number" placeholder="Your national ID no." required/>
+        <input type="date" for="date" placeholder="Choose Date" required/>
+        <label for="time">Choose time</label>
+        <input type="time" for="time" placeholder="Choose Time" required/>
+        <label for="section">Departure</label>
+        <input name="section" list="scripts" autofocus />
+        <datalist id="scripts">
+            <option value="Wilson Airport">
+            <option value="JKIA">
+            <option value="Mombasa">
+            <option value="Kisumu">
+            <option value="Naivasha">
+            <option value="Naivasha"></option>
+            <option value="Eldoret">
+            <option value="Nakuru">
+            <option value="Voi">
+            <option value="Namanga">
+        </datalist>
+        <label for="section">Specify a Destination</label>
+        <input name="section" list="drop" autofocus />
+        <datalist id="drop">
+            <option value="Wilson Airport">
+            <option value="JKIA">
+            <option value="Mombasa">
+            <option value="Kisumu">
+            <option value="Naivasha">
+            <option value="Naivasha"></option>
+            <option value="Eldoret">
+            <option value="Nakuru">
+            <option value="Voi">
+            <option value="Namanga">
+        </datalist>
+        <input type="submit" value="BOOK">
+    </form>
+</body>
+</html>
