@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+ body{
+    background-color: #ffffff;
+}
+
+/* style the navigation bar */
+.navigation-bar {
+    height: 10vh;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* remove the toogle icon for larger screen device  */
+#nav-toggle {
+    display: none;
+} 
+.toogle-label {
+    display: none;
+}
+#logo-menu {
+    font-size: 1.4em;
+    padding: 20px;
+}
+
+/* style logo */
+.logo{
+    text-decoration: none
+}
+
+/* style the navigation links */
+#header ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0 150px;
+}
+#header ul li {
+    padding: 20px 30px;
+}
+#header ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* hambuger icon styling */
+#hambuger-icon {
+    display: none;
+    cursor: pointer;
+    margin: auto 0;
+}
+#hambuger-icon {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+    opacity: 0;
+}
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100;
+}
+/* style the log in and sign in buttons */
+.buttons {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;  
+}
+.buttons button {
+    height: 7vh;
+    width: 100px;
+    padding-right: 20%; 
+    font-size: 1.2em; 
+    background-color: #2b49ff; 
+    cursor: pointer;
+    border-radius: 13px;
+}
+.buttons a{
+    padding: 0 10px;
+}
+.contact-container {
+    display: flex;
+    margin-left: 27%;
+    margin-bottom: 4%;
+}
+/* contact card style */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid blue;
+    width: 30%;
+    height: 30vh;
+    margin-right: 40px;
+    padding: 20px;
+    cursor: pointer;
+}
+.contact-card button {
+    height: 4vh;
+    color: black;
+    font-weight: bold;
+}
+.contact-card h4, p {
+    padding-bottom: 5%;
+}
+.contact-card i {
+    font-size: 30px;
+    padding-bottom: 3%;
+}
+/* FAQs card style */
+.faqs-container {
+    margin: 12%;
+}
+.faqs {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+/* style footer container */
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(172, 165, 155);
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8%;
+    padding-top: 2%;
+}
+.company ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+.socials {
+    margin-left: 15%;
+    
+}
+.newsletter {
+    margin-left: 20%;
+    padding: 20px;
+}
+.socials ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+.checkbox p {
+    width: 50%;
+    font-size: 0.9em;
+}
+#inputbox {
+    width: 50%;
+    border-radius: 5px;
+    height: 4vh;
+}
+.newsletter a button{
+    font-size: 1.2em;
+    background-color: red;
+    border-radius: 8px;
+}
+.copyright {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* style for mobile devices */
+  @media only screen and (max-width: 700px) {
+    body {
+        margin: 0;
+    }
+    .footer-container {
+      flex-direction: column;
+      grid-template-columns: 2fr 1fr;
+    }
+    .socials{
+        position: absolute;
+        margin-left: 50%;
+    }
+    .newsletter {
+    margin-left: 9%;
+      width: 100%;
+    }
+    #inputbox {
+        width: 70%;
+    }
+    .checkbox p {
+        width: 70%;
+    }
+    .copyright {
+        padding-top: 20px;
+        font-size: 1em;
+    }
+    #hambuger-icon {
+        display: block;
+    }
+    #header{
+        display: none;
+    }
+.buttons button {
+    display: none;
+}
+  }
