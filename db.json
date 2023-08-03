@@ -21,43 +21,51 @@
   ],
   "helicopter": [
     {
-      "image": "./images/img8.jpg",
-      "type": "Maximum 4 people",
+      "image": "./images/img1.jpg",
+      "type": "Sikorsky Vh-60N ",
+      "capacity": "Maximum 4 people",
       "cost": "$1800"
     },
     {
       "image": "./images/img7.jpg",
-      "type": "Maximum 4 people",
+      "type": "Airbus H120",
+      "capacity": "Maximum 4 people",
       "cost": "$1900"
     },
     {
       "image": "./images/img6.jpg",
-      "type": "Maximum 4 people",
+      "type": "Airbus H120",
+      "capacity": "Maximum 4 people",
       "cost": "$1900"
     },
     {
       "image": "./images/img5.jpg",
-      "type": "Maximum 4 people",
+      "type": "Eurocopter X³",
+      "capacity": "Maximum 4 people",
       "cost": "$1800"
     },
     {
       "image": "./images/img3.jpg",
-      "type": "Maximum 4 people",
+      "type": "Bell 206 Jet Ranger",
+      "capacity": "Maximum 4 people",
       "cost": "$1500"
     },
     {
       "image": "./images/img2.jpg",
-      "type": "Maximum 4 people",
+      "type": "Bell 206 Jet Ranger",
+      "capacity": "Maximum 4 people",
       "cost": "$180"
     },
     {
-      "image": "./images/view4.jpg",
-      "type": "Maximum 4 people",
+      "image": "./images/img7.jpg",
+      "type": "Airbus L120",
+      "capacity": "Maximum 4 people",
       "cost": "$180"
     },
     {
-      "image": "./images/img1.jpg",
-      "type": "Maximum 4 people",
+      "image": "./images/img8.jpg",
+      "type": "Kamov Ka-27",
+      "capacity": "Maximum 4 people",
       "cost": "$180"
     }
   ]

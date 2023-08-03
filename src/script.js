@@ -1,5 +1,33 @@
-// const form = document.getElementById('form')[0];
 const mycards = document.getElementsByClassName("booking-cards")[0];
+
+// const form = document.getElementById('form')[0];
+
+//fetch items from json server
+fetch("http://localhost:3000/helicopter")
+  .then((res) => res.json())
+  .then(data => cardsLoad(data))
+
+function cardsLoad (data) {
+    
+    data.map(i => {
+        console.log(data)
+        let getCards = document.createElement("div");
+        getCards.className = "helicopter-cards";
+        getCards.innerHTML = `
+        <div id="chopper">
+            <img style="width: 100%; border-radius: 3px; height: 25vh"; src="${i.image}"/> 
+            <h4>${i.type}</h4>
+            <p>Capacity: ${i.capacity}</p> 
+            <p>Cost: ${i.cost}</p>
+            <a target="_blank" href="./checkout.html">BOOK NOW</a>
+        </div>
+        `;
+
+        mycards.appendChild(getCards);
+    })
+    
+}
+
 
 // //add event listener to form
 // form.addEventListener('submit', submitForm);
@@ -45,27 +73,3 @@ const mycards = document.getElementsByClassName("booking-cards")[0];
 
 // }
 
-//fetch items from json server
-fetch("http://localhost:3000/helicopter")
-  .then((res) => res.json())
-  .then(data => cardsLoad(data))
-
-function cardsLoad (data) {
-    
-    data.map(i => {
-        console.log(data)
-        let getCards = document.createElement("div");
-        getCards.className = "helicopter-cards";
-        getCards.innerHTML = `
-        <div>
-            <img src="${i.image}"/> 
-            <p>Capacity: ${i.type}</p> 
-            <p>Cost: ${i.cost}</p>
-            <a target="_blank" href="./checkout.html">Book</a>
-        </div>
-        `;
-
-        mycards.appendChild(getCards);
-    })
-    
-}

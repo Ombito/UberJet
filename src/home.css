@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(247, 234, 234);
 }
 * {
     box-sizing: border-box;
@@ -28,21 +28,31 @@ li #logout {
     color: blue;
 }
 .flights {
-    margin-left: 2%;
+    margin-left: 1%;
 }
-.cards {
+.helicopter-cards {
     text-align: center;
 }
-.cards img {
-    width: 100%;
-    height: 35vh;
+#chopper {
+    background-color: rgb(230, 230, 207);
+    border-radius: 7px;
+    width: 110%;
+    cursor: pointer;
+}
+#chopper:hover {
+    background-color: rgb(208, 208, 197);
+}
+#chopper a {
+    background-color:rgb(159, 246, 223);
+    text-decoration: none;
 }
 .booking-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    margin-left: 1%;
-    margin-right: 1%;
+    gap: 80px;
+    margin-left: 12%;
+    margin-right: 0;
+    align-items: center;
 }
 .btn {
     background-color: green;
