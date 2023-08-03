@@ -44,10 +44,12 @@ This is an online helicopter booking web application. Users can book helicopter 
 5. [Travel and Booking APIs for Online Travel and Tourism Service Providers - AltexSoft](https://www.altexsoft.com/blog/engineering/travel-and-booking-apis-for-online-travel-and-tourism-service-providers/)
 6. [SheCodes Athena - AI](https://www.shecodes.io/athena?tag=events)
 
-Citations:
-[1] https://www.myflighttours.com
-[2] https://howtostartanllc.com/business-ideas/helicopter-tour
-[3] https://orbicair.com
-[4] https://www.maverickhelicopter.com
-[5] https://www.altexsoft.com/blog/engineering/travel-and-booking-apis-for-online-travel-and-tourism-service-providers/
-[6] https://www.shecodes.io/athena?tag=events
+## Citations
+1. https://www.myflighttours.com 
+2. https://howtostartanllc.com/business-ideas/helicopter-tour
+3. https://orbicair.com
+4. https://www.maverickhelicopter.com
+5. https://www.altexsoft.com/blog/engineering/travel-and-booking-apis-for-online-travel-and-tourism-service-providers/
+6. https://www.shecodes.io/athena?tag=events
+
+
