@@ -21,7 +21,7 @@
   ],
   "helicopter": [
     {
-      "image": "./images/img1.jpg",
+      "image": "./images/img2.jpg",
       "type": "Sikorsky Vh-60N ",
       "capacity": "Maximum 4 people",
       "cost": "$1800"

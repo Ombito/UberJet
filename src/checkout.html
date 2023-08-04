@@ -12,26 +12,15 @@
         <h3>Book Now</h3>
         <label for="name">Full Name</label>
         <input id="name" type="text" name="name" placeholder="Enter your full name" required/>
-        <div class="telNumber">
-            <div>
-                <label for="number">Mobile Number</label>
-                <input id="mobile" name="number" type="tel" placeholder="Mobile number" required/>
-            </div>
-            <div>
-                <label for="number">National ID no.</label>
-                <input id="national-id" type="tel" for="number" placeholder="Your national ID no." required/>
-            </div>
-        </div>
-        <div class="form-time">
-            <div >
-                <label class="datelabel" for="time">Choose date</label>
-                <input id="date" type="date" for="date" placeholder="Choose Date" required/>
-            </div>
-            <div>
-                <label for="time">Choose time</label>
-                <input id="time" type="time" for="time" placeholder="Choose Time" required/>
-            </div>
-        </div>
+        
+            <label for="number">Mobile Number</label>
+            <input id="mobile" name="number" type="tel" placeholder="Mobile number" required/>
+            <label for="number">National ID no.</label>
+            <input id="national-id" type="tel" for="number" placeholder="Your national ID no." required/>
+            <label class="datelabel" for="time">Choose date</label>
+            <input id="date" type="date" for="date" placeholder="Choose Date" required/>
+            <label for="time">Choose time</label>
+            <input id="time" type="time" for="time" placeholder="Choose Time" required/>
         <label for="section">Departure</label>
         <select name="places" id="scripts" required>
             <option value="">Choose location</option>
@@ -58,7 +47,7 @@
             <option value="Voi">Voi</option>
             <option value="Namanga">Namanga</option>
         </select>
-        <input id="button" type="submit" value="BOOK">
+        <input id="button" type="submit" value="BOOK" href="./home.html">
     </form>
 </body>
 </html>

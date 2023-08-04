@@ -1,6 +1,6 @@
 const mycards = document.getElementsByClassName("booking-cards")[0];
 
-// const form = document.getElementById('form')[0];
+const form = document.getElementById('form');
 
 //fetch items from json server
 fetch("https://json-server-ombito.vercel.app/helicopter")
@@ -30,10 +30,12 @@ function cardsLoad (data) {
 
 
 //add event listener to form
-form.addEventListener('submit', submitForm);
 
-function submitForm(event) {
-    event.preventDefault(); 
+    if(form) {
+        form.addEventListener('submit', submitForm);
+    }
+
+function submitForm(){
 
     let name = document.getElementById('name').value;
     let mobile = document.getElementById('mobile').value;
@@ -43,6 +45,7 @@ function submitForm(event) {
     let departure = document.getElementById('scripts').value;
     let destination = document.getElementById('drop').value;
 
+    console.log(destination);
     let formObj = {
         name: name,
         mobile: mobile,
@@ -53,6 +56,7 @@ function submitForm(event) {
         destination: destination,
     };
 
+    
     // Post form data to the JSON server
     fetch("https://json-server-ombito.vercel.app/tickets", {
         method: "POST",
@@ -61,9 +65,9 @@ function submitForm(event) {
         },
         body: JSON.stringify(formObj),
     })
-    .then((res) => res.json())
-    .then((data) => {
-        console.log(data);
+    .then(res => res.json())
+    .then(gift => {
+        console.log(gift);
         alert('Flight was booked successfully. Please check your email for details.');
     })
     .catch((error) => {
