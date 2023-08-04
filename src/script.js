@@ -1,4 +1,6 @@
-const mycards = document.getElementsByClassName("booking-cards")[0];
+document.addEventListener("DOMContentLoaded", (e) => {
+    e.preventDefault();
+
 
 const form = document.getElementById('form');
 
@@ -8,10 +10,11 @@ fetch("https://json-server-ombito.vercel.app/helicopter")
   .then(data => cardsLoad(data))
 
 function cardsLoad (data) {
-    
+    const mycards = document.getElementById("booking-cards");  
     data.map(i => {
         console.log(data)
         let getCards = document.createElement("div");
+      
         getCards.className = "helicopter-cards";
         getCards.innerHTML = `
         <div id="chopper">
@@ -22,7 +25,7 @@ function cardsLoad (data) {
             <a target="_blank" href="./checkout.html">BOOK NOW</a>
         </div>
         `;
-
+        console.log(getCards);
         mycards.appendChild(getCards);
     })
     
@@ -31,12 +34,11 @@ function cardsLoad (data) {
 
 //add event listener to form
 
-    if(form) {
-        form.addEventListener('submit', submitForm);
-    }
+// form.addEventListener('submit', submitForm());
 
-function submitForm(){
-
+function submitForm(e){
+    e.preventDefault();
+    console.log('Images');
     let name = document.getElementById('name').value;
     let mobile = document.getElementById('mobile').value;
     let nationalid = document.getElementById('national-id').value;
@@ -45,7 +47,6 @@ function submitForm(){
     let departure = document.getElementById('scripts').value;
     let destination = document.getElementById('drop').value;
 
-    console.log(destination);
     let formObj = {
         name: name,
         mobile: mobile,
@@ -55,7 +56,7 @@ function submitForm(){
         departure: departure,
         destination: destination,
     };
-
+ console.log(formObj);
     
     // Post form data to the JSON server
     fetch("https://json-server-ombito.vercel.app/tickets", {
@@ -75,5 +76,11 @@ function submitForm(){
         alert("An error occurred while booking the flight. Please try again later.");
     });
 
+
+}
+if(form) {
+    form.addEventListener('submit', submitForm());
 }
 
+
+})
