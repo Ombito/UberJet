@@ -59,7 +59,7 @@ function submitForm(e){
  console.log(formObj);
     
     // Post form data to the JSON server
-    fetch("https://json-server-ombito.vercel.app/tickets", {
+    fetch("http://localhost:3000/tickets", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -79,7 +79,7 @@ function submitForm(e){
 
 }
 if(form) {
-    form.addEventListener('submit', submitForm());
+    form.addEventListener('submit', submitForm);
 }
 
 
