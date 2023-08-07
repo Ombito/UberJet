@@ -1,6 +1,7 @@
 {
   "tickets": [
     {
+      "id": 1,
       "name": "Alvin Fred Ombito",
       "mobile": "0712345678",
       "nationalid": "1909043",
@@ -8,16 +9,27 @@
       "time": "10:00",
       "departure": "Kisumu",
       "destination": "Nairobi"
-  },
-      {
-          "name": "Bridgit Wangari",
-          "mobile": "0787654321",
-          "nationalid": "37892043",
-          "date": "04-01-2023",
-          "time": "10:00",
-          "departure": "Kisumu",
-          "destination": "Nairobi"
-      }
+    },
+    {
+      "id": 2,
+      "name": "Bridgit Wangari",
+      "mobile": "0787654321",
+      "nationalid": "37892043",
+      "date": "04-01-2023",
+      "time": "10:00",
+      "departure": "Kisumu",
+      "destination": "Nairobi"
+    },
+    {
+      "name": "Jan Kimutai",
+      "id": "145",
+      "mobile": "1",
+      "nationalid": "1",
+      "date": "2023-08-10",
+      "time": "13:04",
+      "departure": "Naivasha",
+      "destination": "JKIA"
+    }
   ],
   "helicopter": [
     {

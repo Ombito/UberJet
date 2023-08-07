@@ -46,7 +46,7 @@ li #logout {
     background-color:rgb(159, 246, 223);
     text-decoration: none;
 }
-.booking-cards {
+#booking-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 80px;
